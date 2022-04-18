@@ -1,27 +1,42 @@
 .App {
   text-align: center;
-  background-color: rgb(197, 246, 230);
+  align-items: center;
+  background-color: rgb(245, 178, 191);
   font-weight: 700;
   width: 80%;
+  height: 700px;
   margin: auto;
   border-radius: 10px;
-
 }
 
 button{
-  background-color: rgb(255, 165, 165);
+  background-color: rgb(183, 238, 184);
   border: none;
   border-radius: 10px;
   font-weight: 700;
+  width: 100px;
+  height: 25px;
 }
 
 input{
   font-weight: 700;
+  width: 15%;
   border-radius: 10px;
 }
 
 option{
-   font-weight: 700;
+  font-weight: 700;
+}
+
+table, th, td {
+  border: 1px solid;
+  gap: 20px;
+}
+
+.table{
+  background-color: rgb(173, 202, 255);
+  align-items: center;
+  margin: auto;
 }
 
 

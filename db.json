@@ -107,6 +107,39 @@
       "tenth_score": "100",
       "twelth_score": "100",
       "id": 10
-    }
+    },
+    {
+      "twelth_score": "",
+      "id": 11
+    },
+    {
+      "twelth_score": "",
+      "id": 12
+    },
+    {
+      "twelth_score": "",
+      "id": 13
+    },
+    {
+      "first_name": "Divya",
+      "last_name": "Sharma",
+      "email": "divya@gmail.com",
+      "gender": "female",
+      "age": "21",
+      "tenth_score": "100",
+      "twelth_score": "100",
+      "id": 14
+    },
+    {
+      "first_name": "Divya",
+      "last_name": "Sharma",
+      "email": "divya@gmail.com",
+      "gender": "female",
+      "age": "21",
+      "tenth_score": "100",
+      "twelth_score": "100",
+      "id": 15
+    },
+    []
   ]
 }
