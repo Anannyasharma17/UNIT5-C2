@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState} from "react";
+import { AddStudent } from "./components/AddStudent";
+import { ShowStudents } from "./components/ShowStudents";
 
 function App() {
+  const [state, setState] = useState("show")
+
+  const handleChange =()=>{
+    if(state == "add"){
+      setState("show")
+    }
+    else if(state == "show"){
+      setState("add")
+    }
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button className="togglebtn" onClick={handleChange}>{state==="show" ? "Add Data" : "show Data"}</button>
+      {/* Show either  AddStudent component or ShowStudents dependeing on the above button click  */}
+      {/* make sure the table is shown initially, do not show form initially */}
+      {state ==="show" ? <ShowStudents/>:<AddStudent/>}
+      {/* make sure to show either of them do not both together */}
     </div>
   );
 }
